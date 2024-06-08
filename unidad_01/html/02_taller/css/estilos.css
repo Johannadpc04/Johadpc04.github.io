@@ -8,6 +8,10 @@ a {
 
 }
 
+li.enlace{
+    display: inline-block;
+}
+
 .caja-enlace {
     display: block;
     width: 200px;
