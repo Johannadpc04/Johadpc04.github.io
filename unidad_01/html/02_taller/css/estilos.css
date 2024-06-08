@@ -12,10 +12,30 @@ li.enlace{
     display: inline-block;
 }
 
+.container-imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen{
+    width: 400px;
+}
+
 .caja-enlace {
     display: block;
     width: 200px;
     border: 1px solid lightblue;
     padding: 5px;
     margin: 5px;
+}
+.container-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-footer{
+    color: aliceblue;
+    font-size: 20px;
+    background-color: black;
 }
