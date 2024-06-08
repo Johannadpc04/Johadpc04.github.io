@@ -3,8 +3,8 @@ p {
     background-color: lightskyblue;
 }
 
-.posicion-absoluta {
-    position: absolute;
+.posicion-relativo {
+    position: relative;
     top:20px;
     left: 20px;
     background-color: blue;
