@@ -41,7 +41,7 @@
 }   
 
 .item-box {
-    border: 1px solid black;
+    border: 3px solid black;
     height: fit-content;
     width: fit-content;
     padding: 20px;
@@ -53,5 +53,5 @@
 
 .item-button {
     font-size: 20px;
-    box-shadow: 8px 8px 5px rgba(0,0,0.5)  ;
+    box-shadow: 8px 8px 5px rgba(0,0,0.5);
 }
