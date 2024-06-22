@@ -35,7 +35,7 @@
     grid-area: footer;
 }   
 
-.item1, .item2, .item3, .item4, .item5 {
+.item-box {
     border: 1px solid black;
     height: fit-content;
     width: fit-content;
