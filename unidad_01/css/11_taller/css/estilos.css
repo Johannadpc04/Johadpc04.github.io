@@ -23,7 +23,6 @@
 
 .left{
     grid-area: left;
-    background-color: bisque;
 }
 
 .content{
