@@ -65,11 +65,17 @@
 }
 
 #opcion_01 {
-    background-color: lawngreen;
+    background-color: antiquewhite;
     z-index: 2;
 }
 
 #opcion_02 {
     background-color: lightskyblue;
     z-index: 1;
+}
+
+img{
+    width: 280px;
+    height: 280px;
+    position: relative;
 }
