@@ -1,17 +1,13 @@
-function cargar_elemento(){
-    var content= document.getElementById("content")
-    var texto=document.getElementById("texto")
+function seleccionar_opcion(opcion){
+    var opcion_1= document.getElementById("opcion_01")
+    var opcion_2=document.getElementById("opcion_02")
 
-    var div=document.createElement("div")
-    div.className="item-box"
-    var texto=document.createTextNode(texto.value)
-    contador++
-    div.appendChild(texto)
-
-    content.appendChild(div)
-}
-
-function eliminar_elemento(){
-    var content = document.getElementById("content")
-    content.removeChild(content.lastElementChild)
+    if (opcion == 1) {
+        opcion_1.style.zIndex = 2
+        opcion_2.style.zIndex = 1
+    } else if (opcion == 2) {
+        opcion_1.style.zIndex = 1
+        opcion_2.style.zIndex = 2
+    }
+    
 }
