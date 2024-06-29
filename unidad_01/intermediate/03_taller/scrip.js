@@ -3,7 +3,7 @@ let mi_carro={
     modelo:'MZX-2000',
     anio:2024,
     detalle_auto: function(){
-        console.log( 'Auto: ${this.marca}-${this.modelo}. Año:${this.anio}.')
+        console.log( `Auto: ${this.marca}-${this.modelo}. Año:${this.anio}.`)
     }
 }
 console.log(mi_carro)
