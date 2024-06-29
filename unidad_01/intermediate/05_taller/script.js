@@ -7,10 +7,20 @@ let articulos = [
     { nombre: 'Laptop Dell', modelo: 'Core i7 11va, 512gb ssd, 16gb, tec iluminado', costo: 1207.51 }
 ]
 
+const imprimir_objeto= (objeto) => console.log(`${objeto.nombre} - ${objeto.modelo}, valor: $ ${objeto.costo}`)
+
 //for (let elemento of articulos){
 //  imprimir_objeto(elemento)
 //}
 
-const imprimir_objeto= (objeto) => console.log(`${objeto.nombre} - ${objeto.modelo}, valor: $ ${objeto.costo}`)
+
 articulos.forEach ((objeto)=> imprimir_objeto(objeto))
 
+let articulos_baratos= articulos.some((objeto) => objeto.costo <=100)
+
+//console.log(articulos_baratos)
+if(articulos_baratos){
+    console.log('Existen articulos baratos.')
+}else{
+    console.log('no existen articulos baratos.')
+}
