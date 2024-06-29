@@ -15,6 +15,9 @@ function carro(marca,modelo,anio){
     this.modelo=modelo
     this.anio=anio
     this.detalle_auto=function(){
-        console.log('Auto: ${this.marca}-${this.modelo}. Año: ${this.anio}.')
+        console.log(`Auto: ${this.marca}-${this.modelo}. Año: ${this.anio}.`)
     }
 }
+
+let mi_carro2 = new Carro('Ford', 'Explorer', 2024)
+mi_carro2.detalle_auto()
