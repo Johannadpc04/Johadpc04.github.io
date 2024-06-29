@@ -14,7 +14,7 @@ console.log( suma(10,20) )
 //funcion flecha
 const suma2 = (a, b)=>{
     let total = a + b
-    console.log(" la suma de ${a} y ${b} es ${total}.")
+    console.log(` la suma de ${a} y ${b} es ${total}.`)
 } 
 
 suma2(100,200)
