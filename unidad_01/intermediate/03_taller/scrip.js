@@ -10,7 +10,7 @@ console.log(mi_carro)
 mi_carro.anio=2025
 console.log(mi_carro.detalle_auto())
 
-function carro(marca,modelo,anio){
+function Carro(marca,modelo,anio){
     this.marca=marca
     this.modelo=modelo
     this.anio=anio
