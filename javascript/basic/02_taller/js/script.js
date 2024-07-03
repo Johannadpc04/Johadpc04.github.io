@@ -16,3 +16,4 @@ function eliminar_elemento(){
     var content = document.getElementById("content")
     content.removeChild(content.lastElementChild)
 }
+
