@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template:150px 50px 1fr 50px / 1fr;
+/*    grid-template: 150px 1fr 40px;*/
+    grid-template-areas: "header" "left" "content" "footer";
+    grid-gap: 2px;
+    height: 10vh;
+}
+.h2{
+    text-align: center;
+       
+}
+.item{
+    background-color:antiquewhite;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+}  
+
+.left{
+    grid-area: left;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    grid-gap: 1px;
+}
+
+.content{
+    grid-area: content;
+    grid-gap: 5px;
+    display: flex;
+    flex-direction: row; 
+    align-content: center;
+    align-items: center;
+}
+
+.footer{
+    grid-area: footer;
+}   
+
+
+.item-button {
+    font-size: 20px;
+    box-shadow: 8px 8px 5px rgba(0,0,0.5)  ;
+}
+
+.item-opcion {
+    border: 2px solid lightgray;
+    position: relative;
+    top: 100px;
+    height: 350px;
+    width: 600px;
+}
+
+#receta_01{
+    border: 2px solid saddlebrown;
+    z-index: 2;
+    background-color: aquamarine;
+}
+
+#receta_02{
+    border: 2px solid saddlebrown;
+    z-index: 1;
+    background-color: azure;
+}
+
+
+input {
+    font-size: 20px;
+}
+
+.item-box {
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
