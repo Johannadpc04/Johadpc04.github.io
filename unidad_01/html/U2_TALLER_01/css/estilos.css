@@ -21,7 +21,7 @@ h1 {
 
 .item{
     /*background-color: dodgerblue;*/
-    background-color:dodgerblue;
+    background-color:antiquewhite;
     padding: 10px;
     border: 1px solid lightgray;
 }
@@ -58,7 +58,6 @@ h1 {
     width: fit-content; 
     padding: 20px;
     font-size: 20px;
-    color: aliceblue;
     font-weight: bolder;
 }
 
@@ -69,6 +68,6 @@ h1 {
 
 
 img{
-    border: 2px solid slategrey;
+    border: 5px solid chocolate;
 
 }
