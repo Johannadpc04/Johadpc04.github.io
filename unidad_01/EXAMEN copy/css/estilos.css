@@ -36,7 +36,7 @@
     grid-area: content;
     grid-gap: 5px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: column-reverse; 
     align-content: center;
     align-items: center;
 }
@@ -52,11 +52,12 @@
 }
 
 .item-opcion {
+    font-size: small;
     border: 2px solid lightgray;
     position: relative;
-    top: 100px;
-    height: 350px;
-    width: 600px;
+    /*top: 100px;*/
+    height: 210px;
+    width: 900px;
 }
 
 #receta_01{
@@ -74,15 +75,21 @@
 
 input {
     font-size: 20px;
+    outline: none;
 }
 
 .item-box {
-    border: 1px solid black;
-    height: fit-content;
-    width: fit-content;
-    padding: 20px;
-    font-size: 20px;
+    position: relative;
+    border: 2px solid saddlebrown;
+    height: 210px;
+    width: 900px;
+    font-size: medium;
+    text-align: left;
+    
+    /*padding: 20px;
+    font-size: 20px;*/
     color: black;
-    font-weight: bolder;
-    text-align: center;
+    background-color: aliceblue;
+    /*font-weight: bolder;
+    text-align: center;*/
 }
