@@ -8,17 +8,16 @@ function conectar(personaje){
     xhttp.send()
 }
 
-function obtener_respuesta(){
-    if(xhttp != null && xhttp.readyState==4){
-        if(xhttp.status == 200){
-            let dato= JSON.parse(xhttp.responseText)
-            //console.log(xhttp.responseText)
+function obtener_respuesta() {
+    if (xhttp != null && xhttp.readyState == 4) {
+        if (xhttp.status == 200) {
+            let dato =  JSON.parse(xhttp.responseText)
             console.log(dato)
 
-            let container= document.getElementById('container')
-            let personaje=`<div class="container-item"><h1>${dato.name}</h1>
-            <img src="${dato.image}" /></div>`
-            container.innerHTML=personaje
+            let container = document.getElementById('container')
+            let personaje = `<div class="container-item"><h1>${dato.name}</h1>
+            <img src="${dato.image}" /><div class="container-item">`
+            container.innerHTML = personaje
         }
     }
 }
