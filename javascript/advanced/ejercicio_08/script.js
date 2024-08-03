@@ -35,5 +35,7 @@ let promesas=ids.map( (id) => obtener_personaje(id))
 Promise
    .all( promesas )
    .then ((data)=>{
-      
+      for (let i=0; i<data.length; i++) {
+         personaje( data[i] )
+      }
    })
