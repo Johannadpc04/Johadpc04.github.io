@@ -4,11 +4,11 @@ var app=express()
 app.use(router)
 
 router.get('/',function(req, res){
-
+    res.send('Hola desde GET.')
 })
 
 router.post('/mensaje', function(req, res) {
-    
+    res.send('Hola desde POST.')
 })
 
 let puerto=3000
