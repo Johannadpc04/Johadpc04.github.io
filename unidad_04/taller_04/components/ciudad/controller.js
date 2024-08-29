@@ -1,16 +1,16 @@
 const storage = require('./storage')
 
-function insertar_usuario( dato ) {
+function insertar_ciudad( dato ) {
     return new Promise( (resolve, reject) => {
-        if (!dato) {
-            reject( 'No existen datos' )
+        if (!dato.nombre ) {
+            reject( 'Los datos se encuentran incompletos.' )
         } else {
             resolve( storage.insertar( dato ) )
         }
     } )
 }
 
-function obtener_usuario( dato ) {
+function obtener_ciudad( dato ) {
     return new Promise( (resolve, reject) => {
         if (!dato) {
             reject( 'No existen datos' )
@@ -20,21 +20,7 @@ function obtener_usuario( dato ) {
     } )
 }
 
-function actualizar_usuario(dato){
-    return new Promise((resolve, reject)=>{
-
-    })
-}
-
-function eliminar_usuario(dato){
-    return new Promise( (resolve, reject) => {
-        if(!dato.usuario){
-            reject()
-        }else
-    })
-}
-
 module.exports = {
-    insertar_usuario,
-    obtener_usuario
+    insertar_ciudad,
+    obtener_ciudad
 }

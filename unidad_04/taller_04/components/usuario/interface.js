@@ -18,13 +18,13 @@ routes.get('/', function(req, res) {
 })
 
 routes.put('/', function(req, res){
-    controller.obtener_usuario( req.body )
+    controller.actualizar_usuario( req.body )
         .then( (data) => response.success(req, res, data, 201) )
         .catch( (error) => response.error(req, res, error, 400) )
 })
 
 routes.delete('/', function(req, res){
-    controller.obtener_usuario( req.body )
+    controller.eliminar_usuario( req.body )
         .then( (data) => response.success(req, res, data, 201) )
         .catch( (error) => response.error(req, res, error, 400) )
 })

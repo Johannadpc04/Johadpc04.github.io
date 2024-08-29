@@ -2,7 +2,7 @@
 ## Universidad Politécnica Salesiana
 ### Ingeniería en Ciencias de la Computación
 
-Prof. Guillermo Pizarro
+Johanna Del Pezo
 
 ## Unidad 1: Fundamentos y Arquitectura de la Web
 

@@ -1,37 +1,34 @@
-const model= require('./model')
+const model = require('./model')
 
-function insertar_usuario(dato){
-    
+async function insertar_ciudad(dato) {
+    const resultado = await new model(dato)
+    return resultado.save()
 }
 
-function obtener_usuario(dato){
-    let mi_filtro = {}
+async function obtener_ciudad(dato) {
+        let mi_filtro = {}
      
-     if (dato.usuario != null) {
-        mi_filtro = { usuario: dato.usuario }
-     }
+        if (dato.nombre != null) {
+           mi_filtro = { nombre: dato.nombre }
+        }
+   
+        const data = await model.find( mi_filtro )
+           .populate('pais')
+           .exec( )
 
-     const resultado = await model.find( mi_filtro )
-     return resultado
+        let ciudades = []
+        for (objeto of data) {
+            let ciudad = {
+                ciudad_id: objeto._id,
+                ciudad_nombre: objeto.nombre,
+                pais_nombre: objeto.pais.nombre
+            }
+            ciudades.push( ciudad )
+        }
+        return ciudades
 }
 
-function actualizar_usuario(dato){
-    const usuario= model.findOne( {usuario:dato.usuario})
-    usuario.nombre=dato.nombre
-    usuario.apellido=dato.apellido
-    usuario.clave=dato.clave
-    usuario.fecha_nacimiento=dato.fecha_nacimiento
-
-    const resultado=usuario.save()
-    return resultado
-}
-
-function eliminar_usuario(dato){
-    const resultado=model.deleteOne({usuario: dato.usuario})
-}
-
-module.exports={
-    insertar: insertar_usuario,
-    obtener:obtener_usuario,
-    actualizar:actualizar_usuario
+module.exports = {
+    insertar:insertar_ciudad,
+    obtener:obtener_ciudad
 }
