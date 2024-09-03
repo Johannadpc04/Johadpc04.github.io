@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+    <form id="formulario">
+        <input type="hidden" id="usuario-id" placeholder="Usuario-id">        
+        <input type="text" id="usuario" placeholder="Usuario">        
+        <input type="text" id="clave" placeholder="Clave">        
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+        <input type="date" id="fecha-nacimiento" placeholder="Fecha-nacimiento">
+        <button type="submit">Guardar</button>
+        <button type="button" id="buscar-btn">Buscar</button>
+    </form>
+    <ul id="lista-usuarios"></ul>
+    <script type="text/Javascript" src="script.js"></script>
+</body>
+</html>

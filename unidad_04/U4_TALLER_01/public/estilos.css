@@ -9,7 +9,6 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Estilos del formulario */
 #formulario {
     background-color: #fff;
     padding: 40px;
@@ -18,7 +17,6 @@ body {
     width: 400px;
 }
 
-/* Estilos de los inputs y botón */
 input, button {
     width: 100%;
     padding: 15px;
@@ -33,7 +31,6 @@ button {
     cursor: pointer;
 }
 
-/* Estilos de la lista de usuarios */
 #lista-usuarios {
     list-style: none;
     padding: 0;
