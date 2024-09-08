@@ -30,7 +30,7 @@ async function insertar_ciudad(dato) {
 async function obtener_ciudad(dato) {
     let mi_filtro = {}
     
-    if (dato.ciudades != null) {
+    if (dato.nombre != null) {
        mi_filtro = { nombre: dato.nombre }
     }
 

@@ -6,11 +6,6 @@ const req_string = {
     required: true
 }
 
-const req_date = {
-    type: Date,
-    required: true
-}
-
 const empleado_schema = new schema({
     cedula : req_string,
     nombre : req_string,

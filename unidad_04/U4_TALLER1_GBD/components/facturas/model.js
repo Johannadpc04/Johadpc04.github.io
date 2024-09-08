@@ -17,7 +17,6 @@ const req_num ={
 }
 
 const factura_schema = new schema({
-    nombre: req_string,
     codigo: req_string,
     fecha_emision: req_date,
     valor_subtotal: req_num,

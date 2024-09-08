@@ -8,8 +8,8 @@ async function insertar_factura(dato) {
 async function obtener_factura(dato) {
      let mi_filtro = {}
      
-     if (dato.factura != null) {
-        mi_filtro = { nombre: dato.nombre }
+     if (dato.codigo != null) {
+        mi_filtro = { codigo: dato.codigo }
      }
 
      const resultado = await model.find( mi_filtro )
